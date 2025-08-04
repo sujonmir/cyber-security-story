@@ -1,0 +1,9 @@
+      <div class="lession">
+        <strong>THE LESSON (Phishing Isn’t Just Email—It’s Fear.)</strong>
+        <br />
+        "They don’t hack systems. They hack you. Your panic. Your trust. Your
+        hope that this time, it’s real." <br />
+
+        <a href="start.html">[TRY AGAIN?]</a> (You won’t make the same mistake
+        twice… will you?)
+      </div>

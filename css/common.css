@@ -1,0 +1,194 @@
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 20px 20px 100px 20px;
+}
+small {
+  font-size: 0.6em;
+}
+strong {
+  font-size: 1.2em;
+}
+h1,
+h3 {
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="submit"] {
+  background-color: black;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #003300;
+}
+
+#greeting {
+  margin-top: 15px;
+  font-style: italic;
+  animation: flicker 1.5s infinite;
+}
+#showName {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.play_wrapper {
+  display: inline-block;
+}
+.play-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  transition: text-shadow 0.3s, transform 0.3s;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.play-button:hover {
+  text-shadow: 0 0 8px #00ff00, 0 0 15px #00ff00;
+}
+
+.play-button img {
+  width: 100px;
+  transition: transform 0.3s;
+}
+
+.play-button:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  22%,
+  24%,
+  55% {
+    opacity: 0;
+  }
+}
+
+/* style of order list start */
+ol {
+  list-style: none; /* Remove default markers */
+  counter-reset: item;
+  padding-left: 1.5em;
+}
+
+ol li {
+  counter-increment: item;
+  position: relative;
+  margin-bottom: 1em;
+  padding-left: 50px;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+}
+
+ol li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 35%;
+  background-color: #00ff00;
+  color: black;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  font-size: 24px;
+}
+ol li:hover {
+  animation: flicker 1.5s infinite;
+}
+/* style of order list end */
+
+/* blockquote style start */
+blockquote {
+  position: relative;
+  padding-left: 20px;
+  color: red;
+}
+blockquote::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: red;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+/* blockquote style end */
+.flicking {
+  animation: flicker 1.5s infinite;
+}
+/* game over */
+.over {
+  text-shadow: 0 0 5px red, 0 0 10px red;
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 50px;
+  animation: flicker 1.5s infinite;
+}
+.img {
+  width: 300px;
+}
+.lession {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+.lession > a {
+  color: red;
+  text-shadow: 0 0 5px red, 0 0 10px red;
+}
+.lession::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #00ff00;
+  left: 0;
+  top: 0;
+}

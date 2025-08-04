@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <title>Hack Learning: Cybersecurity</title>
+    <style>
+      h3 {
+        margin-top: -20px;
+        margin-bottom: 50px;
+        font-size: 14px;
+      }
+      #nameForm {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="bgMusic" src="sound/bg-sound.mp3" autoplay loop></audio>
+
+    <!-- START: Added wrapper div -->
+    <div id="typing_effect">
+      <h1>Hack Learning</h1>
+      <h3>- Cybersecurity</h3>
+      <p>
+        <strong>Theme:</strong> Black background with eerie green neon text,
+        flickering like a terminal screen. The atmosphere is tense,
+        digital—every choice could be your last mistake.
+      </p>
+
+      <h1>Prologue</h1>
+      <p>
+        "You think you're safe. You think your passwords, your habits, your
+        little digital life is locked away. But the truth? The internet is a
+        battlefield, and you’re already in the crosshairs." You’re about to
+        experience a day in the life of <span id="showName"></span>, You are not
+        special. You are not a target.
+        <strong>But you are vulnerable.</strong>
+      </p>
+      <p id="greeting"></p>
+      <!-- NOTE: The play button will also be typed out. Consider moving it outside if needed. -->
+      <div class="play_wrapper">
+        <a href="start.html" class="play-button">
+          <img src="img/play-button-1.png" alt="Play Button" />
+          <span>Hack Learning - Cybersecurity</span>
+        </a>
+      </div>
+    </div>
+    <!-- END: Added wrapper div -->
+    <!-- NOTE: The form might look odd being typed out. Consider moving it outside the effect div if needed -->
+    <div class="form-wrapper">
+      <form action="#" id="nameForm">
+        <input
+          type="text"
+          name="name"
+          id="yourName"
+          autocomplete="off"
+          placeholder="Enter your name"
+          required
+        />
+        <input type="submit" value="Save" id="saveName" />
+      </form>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Ensure typing_effect.js is loaded AFTER the content and other scripts that might modify it initially -->
+    <script src="js/typing_effect.js"></script>
+  </body>
+</html>
