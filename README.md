@@ -1,26 +1,51 @@
-# cyber-security-story
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title of the game will shown on tab -->
+    <title>Hack Learning: Cybersecurity</title>
+    <!-- common style for all html file, important for game theme -->
+    <link rel="stylesheet" href="css/common.css" />
+    <style></style>
+  </head>
+  <body>
+    <audio id="bgMusic" src="sound/bg-sound.mp3" autoplay loop></audio>
+    <!-- typing effect will be added for inside elements of id="typing_effect" -->
+    <div id="typing_effect">
+      <!-- title or heading of the game -->
+      <h1></h1>
+      <!-- normal text -->
+      <p></p>
+      <!-- hacker message and important line -->
+      <blockquote>
+        <strong>
+          <!-- bigger and bold text -->
+        </strong>
+      </blockquote>
 
+      <p></p>
+      <!-- for flicking the text -->
+      <div class="flicking"></div>
+      
 
-🎮 Game Overview
-•	Format: The game is structured as a hypertext adventure, where each decision leads to a new HTML page, creating a branching storyline.
-•	Theme: Players navigate scenarios involving cybersecurity challenges, making decisions that reflect real-world digital security practices.
-•	Educational Focus: The game emphasizes the importance of cybersecurity measures such as Two-Factor Authentication (2FA), secure password management, and safeguarding personal information.
-🗂️ Repository Structure
-The repository contains several directories and files that support the game's functionality:
-•	HTML Files: Each game scenario and choice is represented by individual HTML files, such as 1.click-the-link.html, 1A.pay.html, and 1A1A1.broken.html. These files are interconnected to guide the player's journey based on their decisions.
-•	CSS Directory: Contains stylesheets that define the visual presentation of the game.
-•	JS Directory: Houses JavaScript files that add interactivity, such as playing sounds on clicks or managing typing effects.
-•	Sound Directory: Includes audio files like click.mp3 and bg-sound.mp3 to enhance the gaming experience with sound effects and background music.
-•	Img Directory: Stores image assets used throughout the game to support the narrative and visual elements.
-🔗 Gameplay Mechanics
-Players start by clicking on a link, which leads them to various cybersecurity scenarios. Each choice they make—such as enabling 2FA, storing backup codes securely, or reviewing account permissions—affects the storyline's progression. The game aims to simulate the consequences of cybersecurity decisions in a controlled, educational environment.
-
-
-📚 Educational Value
-By engaging with the game's scenarios, players learn about:
-•	The significance of enabling and managing 2FA.
-•	Best practices for storing backup codes and using password managers.
-•	The risks associated with poor cybersecurity habits.
-The game's design encourages players to think critically about their digital security choices, making it a valuable tool for cybersecurity education.
-For a more immersive experience, you can explore the game directly through the repository's HTML files or by accessing the demo directory
-
+      <h3>CHOOSE YOUR FATE:</h3>
+      <ol>
+        <li>
+          <!-- option to choose -->
+          <a href=""></a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+      </ol>
+    </div>
+    <!-- common javascript file for all html file -->
+    <script src="js/common.js"></script>
+    <!-- for typing effect -->
+    <script src="js/typing_effect.js"></script>
+  </body>
+</html>
